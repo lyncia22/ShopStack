@@ -1,3 +1,9 @@
+import { products } from "@/lib/data";
+import { CatalogClient } from "@/components/catalog/catalog-client";
+
 export default function Home() {
-  return <></>;
+  // In a real app, you would fetch this data from an API
+  const allProducts = products;
+
+  return <CatalogClient products={allProducts} />;
 }

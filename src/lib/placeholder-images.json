@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "prod_001",
+      "description": "A modern, high-resolution wireless headphone.",
+      "imageUrl": "https://images.unsplash.com/photo-1668942697842-37332c5932fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoZWFkcGhvbmVzJTIwYXVkaW98ZW58MHx8fHwxNzY0MDEzNjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "headphones audio"
+    },
+    {
+      "id": "prod_002",
+      "description": "A comfortable and stylish cotton t-shirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1604898426702-4b4f1c5e973a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0LXNoaXJ0JTIwYXBwYXJlbHxlbnwwfHx8fDE3NjQwNjA0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "t-shirt apparel"
+    },
+    {
+      "id": "prod_003",
+      "description": "A set of minimalist ceramic mugs.",
+      "imageUrl": "https://images.unsplash.com/photo-1669329597053-993120e439ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZXJhbWljJTIwbXVnc3xlbnwwfHx8fDE3NjM5NzYwNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceramic mugs"
+    },
+    {
+      "id": "prod_004",
+      "description": "A classic hardcover novel by a famous author.",
+      "imageUrl": "https://images.unsplash.com/photo-1689289850637-65e74bf075f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29rJTIwbm92ZWx8ZW58MHx8fHwxNzYzOTQ5OTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book novel"
+    },
+    {
+      "id": "prod_005",
+      "description": "A portable and powerful laptop for professionals.",
+      "imageUrl": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsYXB0b3AlMjBjb21wdXRlcnxlbnwwfHx8fDE3NjM5OTc0NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop computer"
+    },
+    {
+      "id": "prod_006",
+      "description": "A pair of durable and fashionable denim jeans.",
+      "imageUrl": "https://images.unsplash.com/photo-1509003124559-eb6678fe452b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxqZWFucyUyMGFwcGFyZWx8ZW58MHx8fHwxNzY0MDYwNDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jeans apparel"
+    },
+    {
+      "id": "prod_007",
+      "description": "A sleek and elegant scented candle.",
+      "imageUrl": "https://images.unsplash.com/photo-1703254573169-5a424be2d8cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2VudGVkJTIwY2FuZGxlfGVufDB8fHx8MTc2Mzk2NTQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "prod_008",
+      "description": "A collection of insightful non-fiction essays.",
+      "imageUrl": "https://images.unsplash.com/photo-1579279263245-bbf82b50092f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9va3MlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NDA2MDQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "books collection"
+    },
+    {
+      "id": "prod_009",
+      "description": "A high-performance gaming mouse with RGB lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1631749352438-7d576312185d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnYW1pbmclMjBtb3VzZXxlbnwwfHx8fDE3NjM5NzIwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming mouse"
+    },
+    {
+      "id": "prod_010",
+      "description": "A warm and cozy wool scarf for winter.",
+      "imageUrl": "https://images.unsplash.com/photo-1599948126830-89f10444e491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29sJTIwc2NhcmZ8ZW58MHx8fHwxNzYzOTkwNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wool scarf"
+    },
+    {
+      "id": "prod_011",
+      "description": "A modern and artistic wall clock.",
+      "imageUrl": "https://images.unsplash.com/photo-1530049080396-450947c04fcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2FsbCUyMGNsb2NrfGVufDB8fHx8MTc2Mzk5MTM5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wall clock"
+    },
+    {
+      "id": "prod_012",
+      "description": "A popular sci-fi book series.",
+      "imageUrl": "https://images.unsplash.com/photo-1664395365741-07cb6d014963?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY2ktZmklMjBib29rc3xlbnwwfHx8fDE3NjQwNjA0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sci-fi books"
+    }
+  ]
 }
