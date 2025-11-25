@@ -42,44 +42,49 @@ export default function RegisterPage() {
     }
   }, [user, isUserLoading, router]);
 
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(
+      (user) => {
+        if (user) {
+          const { fullName, email } = form.getValues();
+          const [firstName, ...lastNameParts] = fullName.split(' ');
+          const userProfile = {
+              id: user.uid,
+              firstName: firstName || '',
+              lastName: lastNameParts.join(' ') || '',
+              email: email,
+              address: '',
+              mobileNumber: ''
+          };
+  
+          if (firestore) {
+            const userDocRef = doc(firestore, "users", user.uid);
+            setDocumentNonBlocking(userDocRef, userProfile, { merge: true });
+          }
+          
+          router.push('/');
+          toast({
+            title: "Account Created",
+            description: "You have been successfully signed up.",
+          });
+        }
+      },
+      (error) => {
+          toast({
+            title: "Authentication Error",
+            description: error.message,
+            variant: "destructive",
+          });
+      }
+    );
+    return () => unsubscribe();
+  }, [auth, firestore, router, toast, form]);
+
   const onSubmit = (data: RegisterFormValues) => {
     startTransition(() => {
         initiateEmailSignUp(auth, data.email, data.password);
     });
   };
-
-  auth.onAuthStateChanged(
-    (user) => {
-      if (user) {
-        const { fullName, email } = form.getValues();
-        const [firstName, ...lastNameParts] = fullName.split(' ');
-        const userProfile = {
-            id: user.uid,
-            firstName: firstName || '',
-            lastName: lastNameParts.join(' ') || '',
-            email: email,
-            address: '',
-            mobileNumber: ''
-        };
-
-        const userDocRef = doc(firestore, "users", user.uid);
-        setDocumentNonBlocking(userDocRef, userProfile, { merge: true });
-        
-        router.push('/');
-        toast({
-          title: "Account Created",
-          description: "You have been successfully signed up.",
-        });
-      }
-    },
-    (error) => {
-        toast({
-          title: "Authentication Error",
-          description: error.message,
-          variant: "destructive",
-        });
-    }
-  );
 
   if (isUserLoading || user) {
     return (

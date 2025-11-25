@@ -40,26 +40,29 @@ export default function LoginPage() {
     }
   }, [user, isUserLoading, router]);
 
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(
+      (user) => {
+        if (user) {
+          router.push('/');
+        }
+      },
+      (error) => {
+          toast({
+            title: "Authentication Error",
+            description: error.message,
+            variant: "destructive",
+          });
+      }
+    );
+    return () => unsubscribe();
+  }, [auth, router, toast]);
+
   const onSubmit = (data: LoginFormValues) => {
     startTransition(() => {
       initiateEmailSignIn(auth, data.email, data.password)
     });
   };
-  
-  auth.onAuthStateChanged(
-    (user) => {
-      if (user) {
-        router.push('/');
-      }
-    },
-    (error) => {
-        toast({
-          title: "Authentication Error",
-          description: error.message,
-          variant: "destructive",
-        });
-    }
-  );
 
   if (isUserLoading || user) {
     return (
