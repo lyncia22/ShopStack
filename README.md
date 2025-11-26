@@ -1,3 +1,4 @@
+git init -b main
 # ShopStack: A Modern E-commerce Platform
 
 ShopStack is a feature-rich mini e-commerce platform built with a modern, full-stack technology set. It serves as a demonstration of end-to-end application development, from a dynamic user interface to a robust backend infrastructure.
